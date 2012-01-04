@@ -1,0 +1,53 @@
+body {height:100%;background-color:#fff;color:#000;}
+li {height:36px;text-decoration:none;list-style-type:none;padding-top:3px;zorder:1px solid #f00;}
+.subcontainer {display:block;padding:5px;font-size:16px;font-weight:bold;zorder:1px solid #000;with:380px;}
+.wikipedia_name {float:left;width:110px;padding-right:5px;clear:both;}
+.article_count {float:right;text-align:right;font-size:11px;font-weight:bold;}
+.input_search input {height:20px;float:left;display:none;width:40px;}
+#top_wikipedias {width:100%;text-align:left;margin-top:20px;background-color:#aaa;color:#fff;}
+#wikipedia_logo {
+  padding:2px;
+  text-align:center;
+}
+#goButton {
+  border:0;
+  background:url(/images/s.gif) no-repeat top left;
+  height:25px;
+  width:27px;
+  vertical-align:middle;
+  display:inline-block;
+  float:left;
+}
+#tabs-2 ul input {display:none;}
+.faux_button {
+  background:  #ee0 0px 0px no-repeat;
+  line-height: 20px;
+  height: 20px;
+  padding: 0 0.5em;
+  border: solid 1px #BFDDEA;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+.faux_button:hover {
+  background:  #ff0 0px 0px no-repeat;
+}
+a{unicode-bidi:embed;white-space:nowrap}
+.divTop10item{position:absolute;font-size:0.8em;}
+.divTop10item a{display:block;padding:0;text-decoration:none}
+.divTop10item strong{font-size:larger}
+.divTop10item a:hover strong{text-decoration:underline}
+.divTop10item em,.divTop10item small{color:Black;text-decoration:none}
+.divTop10item em{font-style:italic}
+.divTop10item em.emNonItalicLang{font-style:normal}
+div#p-search{float:none;margin:1em auto 1.5em auto;max-width:95%;padding:0.3em;text-align:center;vertical-align:middle;width:540px}
+div#p-search h5{white-space:normal}
+div#p-search label span{white-space:nowrap}
+form#searchform fieldset{background-color:#f9f9f9;border:1px solid#aaa;margin-top:0.5em;padding:0.7em;width:auto}
+form#searchform input#searchInput{font-size:1.2em;margin:0;padding:0;vertical-align:top}
+form#searchform select#language{margin:0 0.4em;padding:0;vertical-align:middle}
+form#searchform input.searchButton{font-size:1.2em;margin:0;padding:0;vertical-align:top}
+div#divOtherProjects{float:left;font-weight:bold;margin:1.5em -1.0em;vertical-align:middle}
+div.divOtherProjectsItem{float:left;height:60px;min-width:10em;width:33%}
+div#divSiteInfo{clear:both;margin:2.5em 0 2em 0;text-align:center}#tenk div,#hundredk div{font-size:larger}
+
