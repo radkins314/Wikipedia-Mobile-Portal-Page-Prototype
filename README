@@ -1,0 +1,49 @@
+Project: Mobile Portal Page Prototype v1.0
+Copyright 2011, Robert Adkins
+Dual licensed under the MIT or GPL Version 2 (or later) licenses.
+
+Overview
+--------
+
+The mobile portal page prototype is an implementation of a simple Wikipedia home page for portable devices. It supports the following features:
+
+* Geolocation awareness
+* Local language awareness
+* Support for fixed device size and orientation (landscape vs. portrait)
+
+The prototype UI is organized into two tabs.
+
+The first tab presents a welcome panel that lets the user select a desired language and submit search requests. The panel is shown initially in the user's local language which is determined from the country (e.g., UK) or region (e.g., West Bengal, Beijing, etc.) in which the browser is presumed to be running. The panel also displays a sample of other Wikipedias to which the user may want to directly navigate. In addition, links to other Wikimedia projects appear at the bottom of this panel. Note that the small yellow marker on the middle left side of the panel is actually an "easter egg" that allows the user (or tester) to change their presumed geographic address -- as if they were running from a new location. When the user enters an address that cannot be mapped into one of the builtin language locales, the localization of the page is not updated (although the new address is shown). The "Update Location" button reevaluates the current geolocation of the browser and resets the prototype's locale (if there is a builtin mapping).  
+
+The second tab permits the user to jump to the home page of the currently selected language. This page is displayed within its own iframe in order to retain the context of the portal page. In this way the user can easily return to the portal page for selecting a different language or alternate Wikipedia.
+
+TO DO
+-----
+
+* Expand the geographic and language coverage of the prototype. This version of the prototype works in 6 languages: English, Bengali, German, French, Mandarin, and Marathi.
+
+* Presentation of Wikimedia assets should be integrated into and provided by MediaWiki. Currently the resources needed by the prototype are simply statically linked.
+
+* Conversion to a non-propritary geocoding API. Google's geocoding API is used in the prototype as a proof of concept.
+
+* Display the page returned by a search request in an iframe within a third tab. The search result currently replaces the portal page.
+
+* Complete cookie-based implementation to optionally remember user's choice of locale.
+
+* Incorporation of design feedback from WMF and the Wikipedia community. 
+
+Manifest
+--------
+
+./stylesheets/jqtouch.css
+./stylesheets/themes/theme.css
+./stylesheets/mobile_portal_page.css
+./README
+./javascripts/jquery.caret.1.02.js
+./javascripts/base64.js
+./javascripts/geofill.js
+./javascripts/jquery.cookie.js
+./javascripts/jquery-latest.js
+./mobile_portal_page.html
+./index.html (link to mobile_portal_page.html)
+
