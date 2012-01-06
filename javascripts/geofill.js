@@ -175,20 +175,15 @@
       return language_code;
     },
     setLanguage: function(val) {
-      var sel = $("#languageselection").get(0);
-      var i, k, o, m, opts = sel.options;
-      for (i=0;i<opts.length;i++) {
-        o = opts[i];
-        m = o.value.match(/\/\/([^\.]+)\./);
-        if (m != null) {
-          k = m[1];
-          if (k == val) {
-            o.selected = 'selected';
-            sel.selectedIndex = i;
-            return;
-          }
+      $("#languageselection option").each(function(i) {
+        var $this = $(this);
+        var m = $this.val().match(/\/\/([^\.]+)\./);
+        if (m && m[1] == val) {
+          $this.css("selected",  "selected");
+          $("#languageselection").prop("selectedIndex",i);
+          return;
         }
-      }
+      });
     }
   }
 }()).init();

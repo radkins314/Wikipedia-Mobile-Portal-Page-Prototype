@@ -39,7 +39,6 @@ Manifest
 ./stylesheets/themes/theme.css
 ./stylesheets/mobile_portal_page.css
 ./README
-./javascripts/jquery.caret.1.02.js
 ./javascripts/base64.js
 ./javascripts/geofill.js
 ./javascripts/jquery.cookie.js
